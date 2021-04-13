@@ -76,14 +76,14 @@ app.layout = html.Div(
             ], className="nbJoueurs"),
 
             html.Div(children=[
-                html.P("Combien y a t-il de gages supplémentaires par joueur ?"),
+                html.P("Combien y a t-il de gages supplémentaires"),
                 dcc.RadioItems(id="nbGages",
                     options=[
+                        {'label': '1', 'value': 1},
                         {'label': '2', 'value': 2},
-                        {'label': '3', 'value': 3},
-                        {'label': '4', 'value': 4}
+                        {'label': '3', 'value': 3}
                     ],
-                    value='2'),
+                    value=2),
             ], className="nbGages"),
 
             html.Div(children=[
